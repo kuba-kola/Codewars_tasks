@@ -11,9 +11,10 @@
 // 493193  -->  4 + 9 + 3 + 1 + 9 + 3 = 29  -->  2 + 9 = 11  -->  1 + 1 = 2
 
 function digital_root(n) {
-    if (n < 10) return n;
-    return digital_root(
-      n.toString().split('').reduce((acc, d) => {
-        return acc + +d;
-      },0));
-  }
+  if (n < 10) return n;
+  
+  return digital_root(
+    n.toString().split('').reduce((acc, d) => {
+      return acc + +d;
+    },0));
+}

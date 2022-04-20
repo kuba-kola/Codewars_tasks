@@ -15,10 +15,10 @@ function compose(f,g) {
     const func = arguments;
   
       return function() {
-          let args = arguments;
-          for (let i = func.length; i-- > 0;) {
-              args = [func[i].apply(this, args)];
-          }
-          return args[0];
-      }
-  };
+        let args = arguments;
+        for (let i = func.length; i-- > 0;) {
+            args = [func[i].apply(this, args)];
+        }
+        return args[0];
+    }
+}

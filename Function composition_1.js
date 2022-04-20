@@ -24,11 +24,11 @@
 // Your task is to write a compose function which can compose any number of functions together.
 
 function compose(...args) {
-    return function(a) {
-      let result = a;
-      for (let i = args.length - 1; i >= 0; i--) {
-          result = args[i](result);
-      }
-      return result;
+  return function(a) {
+    let result = a;
+    for (let i = args.length - 1; i >= 0; i--) {
+        result = args[i](result);
     }
+    return result;
   }
+}

@@ -4,10 +4,11 @@
 // Note: there will always be at least 1 string; all inputs will be non-empty.
 
 function createMessage(string) {
-    return function(next){
-      if(next == undefined){
-        return string;
-      }
-      return createMessage(string + ' ' + next)
+  return function(next){
+    if(next == undefined){
+      return string;
     }
+    
+    return createMessage(string + ' ' + next)
   }
+}

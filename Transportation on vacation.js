@@ -7,8 +7,11 @@
 // Write a code that gives out the total amount for different days(d).
 
 function rentalCarCost(d) {
-    const startingPrice = 40;
-    if (d >= 7) return d * startingPrice - 50;
-    if (d >= 3) return d * startingPrice - 20;
-    return d*startingPrice;
-  }
+  const startingPrice = 40;
+
+  if (d >= 7) return d * startingPrice - 50;
+
+  if (d >= 3) return d * startingPrice - 20;
+  
+  return d*startingPrice;
+}

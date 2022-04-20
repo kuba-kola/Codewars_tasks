@@ -17,10 +17,10 @@
 
 // The middle character(s) of the word represented as a string.
 
-function getMiddle(s){
-    if(s.length%2==0){
-      return s.substr(s.length/2-1,2);
-    }else{
-      return s.substr(Math.trunc(s.length/2),1);
-    }
-  };
+function getMiddle(s) {
+  if(s.length%2 == 0){
+    return s.substr(s.length/2-1,2);
+  }else{
+    return s.substr(Math.trunc(s.length/2),1);
+  }
+}

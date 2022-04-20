@@ -46,11 +46,13 @@
 // Oof! No wonder people get confused about new. The good news is… everything new can do, you can do too.
 
 function nouveau(Constructor, ...args) {
-    const val = Object.create(Constructor.prototype);
-    const result = Constructor.apply(val, args);
-    if ((typeof result === 'object' || typeof result === 'function') && result !== null) {
-      return result;
-    }
-    return val;
+  const val = Object.create(Constructor.prototype);
+  const result = Constructor.apply(val, args);
+
+  if ((typeof result === 'object' || typeof result === 'function') && result !== null) {
+    return result;
   }
+  
+  return val;
+}
 

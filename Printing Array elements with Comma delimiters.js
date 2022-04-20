@@ -9,5 +9,5 @@
 // Note: if this seems too simple for you try the next level
 
 function printArray(array){
-    return array.join(',');
-  }
+  return array.join(',');
+}
