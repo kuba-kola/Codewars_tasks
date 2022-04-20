@@ -27,19 +27,23 @@ function nine() {return arguments.length === 0 ? 9 : arguments[0](9);}
 function plus() {
     const n = arguments[0];
     return x => x + n;
- }
+}
+
 function minus() { 
     const n = arguments[0];
     return x => x - n;
 }
+
 function times() {
     const n = arguments[0];
     return x => x * n;
- }
+}
+
 function dividedBy() {
     const n = arguments[0];
     return x => Math.floor(x / n);
- }
+}
+
 function zero() {return arguments.length === 0 ? 0 : arguments[0](0); }
 function one() {return arguments.length === 0 ? 1 : arguments[0](1); }
 function two() {return arguments.length === 0 ? 2 : arguments[0](2); }
@@ -54,16 +58,19 @@ function nine() {return arguments.length === 0 ? 9 : arguments[0](9);}
 function plus() {
     const n = arguments[0];
     return x => x + n;
- }
+}
+
 function minus() { 
     const n = arguments[0];
     return x => x - n;
 }
+
 function times() {
     const n = arguments[0];
     return x => x * n;
- }
+}
+
 function dividedBy() {
     const n = arguments[0];
     return x => Math.floor(x / n);
- }
+}

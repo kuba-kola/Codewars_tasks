@@ -9,6 +9,6 @@
 
 // You're going to write a function that's going to return the value in the nth index of an arithmetic sequence.(That is, adding a constant to move to the next element in the "set").
 
-var nthterm = function(first, n, c){
+var nthterm = function(first, n, c) {
     return first + n * c   
-   }
+}

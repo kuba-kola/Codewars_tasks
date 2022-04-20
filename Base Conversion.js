@@ -17,19 +17,19 @@
 // characters from the source alphabet. You don't need to validate it.
 
 function convert (input, source, target) {
-    let decimalValue = input.split('').reduce((acc, cur, i) => {
-      return acc + (source.indexOf(cur) * (source.length ** (input.length - 1 - i)));
-    }, 0);
-  
-    let result = [];
-    let value = 0;
-  
-    do {
-      value = decimalValue % target.length;
-      decimalValue = Math.floor(decimalValue / target.length);
-      result.push(target[value]);
-    }
-    while (decimalValue > 0);
-  
-    return result.reverse().join('');
-  };
+  let decimalValue = input.split('').reduce((acc, cur, i) => {
+    return acc + (source.indexOf(cur) * (source.length ** (input.length - 1 - i)));
+  }, 0);
+
+  let result = [];
+  let value = 0;
+
+  do {
+    value = decimalValue % target.length;
+    decimalValue = Math.floor(decimalValue / target.length);
+    result.push(target[value]);
+  }
+  while (decimalValue > 0);
+
+  return result.reverse().join('');
+};

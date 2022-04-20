@@ -4,5 +4,5 @@
 
 
 function alphabetti(str) {
-    return str.split``.sort((a,b)=>a.toLowerCase()>b.toLowerCase()).join``
-  }
+  return str.split``.sort((a,b)=>a.toLowerCase()>b.toLowerCase()).join``
+}
