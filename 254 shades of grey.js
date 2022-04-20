@@ -13,12 +13,13 @@
 // When n is negative, just return an empty array. If n is higher than 254, just return an array of 254 elements.
 
 function shadesOfGrey(n) {
-    var shades = []
+  var shades = []
+  
+  for (var i = 1; i <= Math.min(n, 254); i++) {
+    var grey = ('0' + i.toString(16)).slice(-2)
     
-    for (var i = 1; i <= Math.min(n, 254); i++) {
-      var grey = ('0' + i.toString(16)).slice(-2)
-      shades.push('#' + grey + grey + grey)
-    }
-    
-    return shades
+    shades.push('#' + grey + grey + grey)
   }
+  
+  return shades
+}

@@ -22,16 +22,16 @@
 // We can assume any number being passed in will be valid whole number.
 
 function add(n){
-    let currentSum = n;
-    
-    function addX(x) {
-      currentSum += x;
-      return addX;
-    }
-    
-    addX.toString = function() {
-      return currentSum;
-    };
-    
+  let currentSum = n;
+  
+  function addX(x) {
+    currentSum += x;
     return addX;
+  }
+  
+  addX.toString = function() {
+    return currentSum;
+  };
+  
+  return addX;
   }
